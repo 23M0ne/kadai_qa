@@ -1,6 +1,5 @@
-/* PC、スマホ共通スタイル */
 body {
-    font-family: "Reenie Beanie", "Hiragino Kaku Gothic ProN";
+    font-family: "Reenie Beanie" ,  "Hiragino Kaku Gothic ProN";
     margin: 0;
 }
   
@@ -58,6 +57,10 @@ img {
         margin: -5px 0 0;
     }
 
+    #logo-sp {
+        display: none;
+    }
+
     /* ナビゲーション */
     nav ul {
     	margin: 0;
@@ -93,12 +96,18 @@ img {
         width: auto;
     }
 
+    /* スマホ用ナビを非表示 */
+    #nav-sp,
+    #menu-sp,
+    #sns-sp {
+    display: none;
+    }
+
     /* キービジュ */
     #kv {
         height: 585px;
         overflow: hidden;
     }
-
 
     #kv > img {
         width: 100vw;
@@ -294,11 +303,9 @@ img {
         margin: 0 auto;
     }
 
- /*  ドリンクメニュー */
+/*  ドリンクメニュー */
     #drink {
         width: 100vw;
-        height: 1163px;
-        top: 70px;
         background: #e4f0d1;
         padding: 50px 0;
         position: relative;
@@ -347,25 +354,26 @@ img {
     }
 
     #drink .item {
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
         width: 26.53%; 
         max-width: 234px; 
         margin: 0 0 70px;
     }
 
-    #drink .item:nth-child(1.2.3) img {
+    #drink .item:nth-child(1) img,
+    #drink .item:nth-child(2) img,
+    #drink .item:nth-child(3) img {
         width: 234px;
         height: 234px;
         margin-bottom: 24px;
         margin-top: 93px;
     }
-
-    #drink .item:nth-child(4.5.6) img{
+    
+    #drink .item:nth-child(4) img,
+    #drink .item:nth-child(5) img,
+    #drink .item:nth-child(6) img {
         width: 234px;
         height: 234px;
-        margin-bottom: 34x;
+        margin-bottom: 34px;
         margin-top: 93px;
     }
 
@@ -407,19 +415,19 @@ img {
         text-align: right;
     }
 
+
     #drink .button3 img {
         width: 270px;
     }
 
- /*  フッター */
-
+/*  フッター */
     footer > div {
         width: 90%;
         max-width: 882px;
-        height: 313px;
         margin: 0 auto;
+        padding: 50px 0 24px;
         display:flex;
-        flex-flow: column;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
@@ -453,71 +461,57 @@ img {
 
     /* ナビゲーション */
 
-    footer nav {
-        margin: 24px 0 71px auto;
-    	list-style-type: none;
-        display: flex;
-        flex-flow: column;
-        width: 882px;
+    footer nav > ul {
+        padding: 0;
     }
 
-    .footer-link ul {
-        display: flex;
-        flex-flow: column;
-        width: 116px;
+    footer nav > ul > li {
+        margin: 8px 0 0 0;
+        white-space: nowrap;
+        list-style-type: none;
     }
 
-    .footer-link li {
+    footer .sns-footer ul {
+        display: flex;
+        margin: 34px 0 0;
+        padding: 0;
+    }
+
+    footer nav .sns-footer li {
+        margin: 0 10px 0 0;
+        list-style-type: none;
+    }
+
+    footer  nav > ul > li a {
         text-decoration: none;
         font-family: "Reenie Beanie";
         font-weight: normal;
         font-size: 26px;
         letter-spacing: 0.1em;
         color: #666;
-        margin: 8px 0 0 0;
-        white-space:nowrap;
+        text-decoration: none;
     }
 
-    .sns-footer ul{
-        display: flex;
-        width: 93px;
-    }
 
-    nav .sns-footer li {
-        margin: 34px 0 0 10px;
-    }
-
-    nav .sns-footer li img{
+    nav .sns-footer li img {
         height: 27px;
         width: auto;
     }
 
-    .shopinfo ul {
-        display: flex;
-        flex-flow: column;
-        width: 240px;
-        white-space:nowrap;
+    footer .shop-info,
+    footer .phone-mail {
+        margin: 40px 0 0;
     }
 
-    .phone-mail ul {
-        display: flex;
-        flex-flow: column;
-        width: 240px;
-        white-space:nowrap;
-    }
-
-    nav > ul > li h2 {
-        text-decoration: none;
+    footer h2 {
         font-family: "Reenie Beanie";
         font-weight: normal;
         font-size: 26px;
         letter-spacing: 0.1em;
-        line-height: 49px;
-        text-align: center;
         color: #666;
     }
 
-    nav > ul > li  p {
+    footer p {
         text-decoration: none;
         font-family: "Hiragino Sans";
         font-weight: normal;
@@ -527,11 +521,161 @@ img {
         color: #666;
     }
 
-    #copyright {
+    .copyright {
+        width: 100%;
         font-family: "Hiragino Sans";
         font-size: 12px;
-        margin-top: 276px;
         color: #707070;
+        text-align: right;
+    }
+}
+
+/*====================
+ スマートフォン用のスタイル
+=====================*/
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 375px;
+        margin: 0;
+    }
+
+     /* PC用ナビゲーション非表示 */
+     #nav-pc {
+        display: none;
+    }
+
+    /* ヘッダー*/
+    header > div {
+        width: 90%;
+        max-width: 333px;
+        height: 217px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    #logo-sp img {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        bottom: 20px;
+        width: 175px;
+    }
+
+    /* ハンバーガーメニュー */
+    #menu-sp {
+        position: absolute;
+        width: 32px;
+        top: 30px;
+        left: 324px;
+    }
+
+    /* スマホ用ナビゲーションレイアウト*/
+    #nav-sp {
+        background-color: #6c6c6a;
+        position: absolute;
+        left: 226px;
+        right: 20px;
+        top: 88px;
+        height: 230px;
+        width: 128px;
+    }
+
+    #nav-sp .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        text-decoration: none;
+        list-style-type: none;
+        width: 102px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        margin-left: 13px;
+        margin-right: 13px;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        white-space:nowrap;
+        text-align: center;
+        
+    }
+
+    #nav-sp > a:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    #sns-sp {
+        display: flex;
+        left: 13px;
+    }
+    
+    #sns-sp img {
+        position: absolute;
+        margin-right: 31px;
+        width: 19px;
+    }
+
+    /* キービジュ */
+
+    #kv {
+        height: 376px;
+        overflow: hidden;
+    }
+
+     #kv > img {
+        top: 89px;
+        width: 100vw;
+        height: 430px;
+        transform: scaleX(-1);
+        object-fit: cover;
+        position:fixed;
+        z-index: -1;
+    }
+
+
+    #kv .blue {
+        position: absolute;
+        width: 196px;
+        height: 191px;
+        left: 140px;
+        top: 297px;
+        background: #81d2dd;
+        border-radius: 50%;
+    }
+
+    #kv .orange {
+        position: absolute;
+        width: 226px;
+        height: 237px;
+        left: -19px;
+        top: 281px;
+        background: #e8ac4c;
+        border-radius: 50%;
+    }
+
+    #kv > p {
+        position: absolute;
+        left: 20px;
+        top: 316px;
+        bottom: auto;
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 19px;
+        letter-spacing: 0.04em;
+        line-height: 1.5263;
+        color: #fff;
     }
 
 }
+

@@ -13,219 +13,228 @@
 
 <body>
 <!-- ヘッダー -->
-<header>
-    <div>
-        <h1 class="logo"><img src="image/cat.svg">Le Café des Chats<span>ル・カフェ・デ・シャ</span></h1>
-        <nav>
-            <ul>
-                <li><a href="kadai.html#about">About</a></li>
-                <li><a href="kadai.html#new arrivals">New Arrivals</a></li>
-                <li><a href="kadai.html#drink">Drink</a></li>
-                <li class="sns">
-                    <ul>
-                        <li><a href="kadai.html"><img src="image/icon_tw.svg" alt="twitter"></a></li>
-                        <li><a href="kadai.html"><img src="image/icon_in.svg" alt="instagram"></a></li>
-                        <li><a href="kadai.html"><img src="image/icon_fb.svg" alt="facebook"></a></li>
-                    </ul>
-                </li>
-                <li><a href="kadai.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<!-- キービジュ -->
-<main>
-    <section id="kv"><!-- キービジュアル -->
-        <img src="image/kv_bg/kv_bg04.jpg" alt="コーヒーを飲む女性"/>
-            <div class="blue"></div><!-- ブルーの小さな円 -->
-            <div class="orange"></div><!-- オレンジの大きな円 -->
-            <p>ル・カフェ・デ・シャは、<br>
-                猫と一緒にゆったりとした時間を<br>
-                楽しめるオアシスです。<br>
-                ゆっくりと開放的な時間を<br>
-                お過ごしください。</p>
-    </section>
-
-    <section id="new-arrivals"><!-- 新着メニュー -->
-        <h1><span class="fr">New Arrivals</span><span class="jp">新着メニュー</span></h1>
-
+    <header>
         <div>
-            <div class="item">
-                <img src="image/berry.png" alt="フレッシュベリージュース"/>
-                <div class="text">
-                  <h2>フレッシュベリージュース</h2><!-- h1じゃない -->
-                  <p>4種類のベリー（いちご・カシス・ラズベリー・ブルーベリー）、プルーンを合わせました。<br>
-                    ベリーの甘酸っぱさですっきりの一杯です。</p>
-                 <p class="price">500円（＋税）</p><!-- h2じゃない -->
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="image/chikin.png" alt="チキンブリトー"/>
-                <div class="text">
-                  <h2>チキンブリトー</h2>
-                  <p>ローズマリーやバジル、タイムなどの様々なハーブの香りが爽快なレモンドレッシングと相まって絶品です。</p>
-                 <p class="price">700円（＋税）</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="image/kiwi.png" alt="フレッシュキウイ"/>
-                <div class="text">
-                  <h2>フレッシュキウイジュース</h2>
-                  <p>生のキウイを1個半使った贅沢なフルーツジュース！<br>
-                    ツブツブ食感も残しつつさっぱりとした甘さです。</p>
-                  <p class="price">500円（＋税）</p>
-                </div>
-            </div> 
-
-            <div class="item">
-                <img src="image/gatto.png" alt="ガトーショコラ"/>
-                <div class="text">
-                  <h2>ガトーショコラ</h2>
-                  <p>ベルギー産チョコを使用した濃厚なチョコケーキです。<br>
-                    ストロベリーの酸味がアクセントになって口の中に広がります。</p>
-                  <p class="price">600円（＋税）</p>
-                </div>
-            </div> 
-
-            <a class="button1">
-                <img src="image/button-newmenu.png" alt="新メニュー一覧">
-             </a>
-       </div>
-    </section>
-
-	<section id="about"><!-- ル・カフェ・デ・シャについて -->
-        <h1><span class="fr">About</span><span class="jp">ル・カフェ・デ・シャについて</span></h1>
-        <p class="img-cat"><!-- リンクじゃないからa要素じゃない -->
-            <img src="image/about_bg/about_bg04.jpg" alt="猫と女性"/>
-        </p>
-
-        <div class="text">
-             <p>
-                ル・カフェ・デ・シャは猫カフェではありません。<br>
-                あくまで「猫と同じ空間でお茶を飲める」ことに<br>
-                重点を置き、人に媚びない自由気ままな猫の姿を<br>
-                店内で自然に楽しむことを目的としています。
-            </p>
-             <p><!-- brを2つ以上続けて記述しない。空けたい時はpで改段落してcssで指定 -->
-                また国産小麦と天然酵母のパンやケーキ、<br>
-                有機栽培のコーヒーなど<br>
-                体に優しいメニューをご用意しております。<br>
-                ル・カフェ・デ・シャで<br>
-                癒やしのひとときをお過ごしください。
-            </p>
-        </div>
-
-        <div class="button2">
-             <img src="image/button-chipie.png" alt="看板猫レシピについて">
-        </div>
-	</section>
-
-	<section id="drink"><!-- ドリンクメニュー -->
-        <h1><span class="fr">Drink</span><span class="jp">ドリンクメニュー</span></h1>
-		
-        <div>
-            <div class="item">
-                <img src="image/latte.png" alt="カフェラテ"/>
-                <div class="text">
-                <h2>カフェラテ</h2>
-                <p>700円（＋税）</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="image/minto.png" alt="ルイボスミントティー"/>
-                <div class="text">
-                <h2>ルイボスミントティー</h2>
-                <p>600円（＋税）</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="image/chocola.png" alt="焼きマシュマロショコラドリンク"/>
-                <div class="text">
-                <h2>焼きマシュマロ<br>ショコラドリンク</h2>
-                <p>800円（＋税）</p>
-                </div>
-            </div>
-
-             <div class="item">
-                <img src="image/ikusu.png" alt="クス・イクス・ビター"/>
-                <div class="text">
-                <h2>クス・イクス・ビター</h2>
-                <p>800円（＋税）</p>
-                </div>
-            </div>
-
-             <div class="item">
-                <img src="image/lime.png" alt="フレッシュライムティー"/>
-                <div class="text">
-                <h2>フレッシュライムティー </h2>
-                 <p>600円（＋税）</p>
-                 </div>
-            </div>
-        
-             <div class="item">
-                <img src="image/dog.png" alt="ソルティ・ドッグ・コリンズ"/>
-                <div class="text">
-                <h2>ソルティ・ドッグ・コリンズ</h2>
-                <p>800円（＋税）</p>
-                </div>
-            </div>
-
-            <div class="button3">
-             <img src="image/button-drinkmenu.png" alt="ドリンクメニュー">
-            </div>
-         </div>
-	</section>
-
-	<footer>
-        <div>
-        <h1 class="logo"><img src="image/cat.svg">Le Café des Chats<span>ル・カフェ・デ・シャ</span></h1>
-        <nav>
-            <ul>
-                <li class="footer-link">
+            <h1 class="logo"><img src="image/cat.svg">Le Café des Chats<span>ル・カフェ・デ・シャ</span></h1>
+            <nav>
                 <ul>
                     <li><a href="kadai.html#about">About</a></li>
                     <li><a href="kadai.html#new arrivals">New Arrivals</a></li>
                     <li><a href="kadai.html#drink">Drink</a></li>
+                    <li class="sns">
+                        <ul>
+                            <li><a href="index.html"><img src="image/icon_tw.svg" alt="twitter"></a></li>
+                            <li><a href="index.html"><img src="image/icon_in.svg" alt="instagram"></a></li>
+                            <li><a href="index.html"><img src="image/icon_fb.svg" alt="facebook"></a></li>
+                        </ul>
+                    </li>
                     <li><a href="kadai.html#contact">Contact</a></li>
                 </ul>
-                </li>
+            </nav>
+        <!-- スマホ用 -->
+            <img id="menu-sp" src="image/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+            <a href="index.html" id="logo-sp"><img src="image/logo-sp.png" alt="トップページに戻る"></a>
+            <nav id="nav-sp">
+                <a class="menu" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">About</a>
+                <a class="menu" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">New Arrivals</a>
+                <a class="menu" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Drink</a>
+                    <div id="sns-sp">
+                        <a href="index.html"><img src="image/icon_tw.svg" alt="twitter"></a>
+                        <a href="index.html"><img src="image/icon_in.svg" alt="instagram"></a>
+                        <a href="index.html"><img src="image/icon_fb.svg" alt="facebook"></a>
+                    </div>
+            </nav>
+         </div>
+    </header>
 
-                <li class="sns-footer">
-                    <ul>
-                        <li><a href="kadai.html"><img src="image/icon_tw.svg" alt="twitter"></a></li>
-                        <li><a href="kadai.html"><img src="image/icon_in.svg" alt="instagram"></a></li>
-                        <li><a href="kadai.html"><img src="image/icon_fb.svg" alt="facebook"></a></li>
-                    </ul>    
-                </li>
-    
-                <li class ="shopinfo">
-                    <ul>
-                    <h2>Shop Info</h2>
-                     <p>182-0011<br>
-                        東京都調布市深大寺北町1-2-1<br>
-                        月火水定休 10:00 - 17:00<br>
-                     </p>
-                     <ul>
-                </li>
+    <main>
+        <!-- キービジュ -->
+        <section id="kv"><!-- キービジュアル -->
+            <img src="image/kv_bg/kv_bg04.jpg" alt="コーヒーを飲む女性"/>
+                <div class="blue"></div><!-- ブルーの小さな円 -->
+                <div class="orange"></div><!-- オレンジの大きな円 -->
+                <p>ル・カフェ・デ・シャは、<br>
+                    猫と一緒にゆったりとした時間を<br>
+                    楽しめるオアシスです。<br>
+                    ゆっくりと開放的な時間を<br>
+                    お過ごしください。</p>
+        </section>
 
-                 <li class="phone-mail">
+        <section id="new-arrivals"><!-- 新着メニュー -->
+            <h1><span class="fr">New Arrivals</span><span class="jp">新着メニュー</span></h1>
+
+            <div>
+                <div class="item">
+                    <img src="image/berry.png" alt="フレッシュベリージュース"/>
+                    <div class="text">
+                      <h2>フレッシュベリージュース</h2><!-- h1じゃない -->
+                      <p>4種類のベリー（いちご・カシス・ラズベリー・ブルーベリー）、プルーンを合わせました。<br>
+                        ベリーの甘酸っぱさですっきりの一杯です。</p>
+                     <p class="price">500円（＋税）</p><!-- h2じゃない -->
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="image/chikin.png" alt="チキンブリトー"/>
+                    <div class="text">
+                      <h2>チキンブリトー</h2>
+                      <p>ローズマリーやバジル、タイムなどの様々なハーブの香りが爽快なレモンドレッシングと相まって絶品です。</p>
+                     <p class="price">700円（＋税）</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="image/kiwi.png" alt="フレッシュキウイ"/>
+                    <div class="text">
+                      <h2>フレッシュキウイジュース</h2>
+                      <p>生のキウイを1個半使った贅沢なフルーツジュース！<br>
+                        ツブツブ食感も残しつつさっぱりとした甘さです。</p>
+                      <p class="price">500円（＋税）</p>
+                    </div>
+                </div> 
+
+                <div class="item">
+                    <img src="image/gatto.png" alt="ガトーショコラ"/>
+                    <div class="text">
+                      <h2>ガトーショコラ</h2>
+                      <p>ベルギー産チョコを使用した濃厚なチョコケーキです。<br>
+                        ストロベリーの酸味がアクセントになって口の中に広がります。</p>
+                      <p class="price">600円（＋税）</p>
+                    </div>
+                </div> 
+
+                <a class="button1">
+                    <img src="image/button-newmenu.png" alt="新メニュー一覧">
+                 </a>
+           </div>
+        </section>
+
+    	<section id="about"><!-- ル・カフェ・デ・シャについて -->
+            <h1><span class="fr">About</span><span class="jp">ル・カフェ・デ・シャについて</span></h1>
+            <p class="img-cat"><!-- リンクじゃないからa要素じゃない -->
+                <img src="image/about_bg/about_bg04.jpg" alt="猫と女性"/>
+            </p>
+
+            <div class="text">
+                 <p>
+                    ル・カフェ・デ・シャは猫カフェではありません。<br>
+                    あくまで「猫と同じ空間でお茶を飲める」ことに<br>
+                    重点を置き、人に媚びない自由気ままな猫の姿を<br>
+                    店内で自然に楽しむことを目的としています。
+                </p>
+                 <p><!-- brを2つ以上続けて記述しない。空けたい時はpで改段落してcssで指定 -->
+                    また国産小麦と天然酵母のパンやケーキ、<br>
+                    有機栽培のコーヒーなど<br>
+                    体に優しいメニューをご用意しております。<br>
+                    ル・カフェ・デ・シャで<br>
+                    癒やしのひとときをお過ごしください。
+                </p>
+            </div>
+
+            <div class="button2">
+                 <img src="image/button-chipie.png" alt="看板猫レシピについて">
+            </div>
+    	</section>
+
+    	<section id="drink"><!-- ドリンクメニュー -->
+            <h1><span class="fr">Drink</span><span class="jp">ドリンクメニュー</span></h1>
+    		
+            <div>
+                <div class="item">
+                    <img src="image/latte.png" alt="カフェラテ"/>
+                    <div class="text">
+                        <h2>カフェラテ</h2>
+                        <p>700円（＋税）</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="image/minto.png" alt="ルイボスミントティー"/>
+                    <div class="text">
+                        <h2>ルイボスミントティー</h2>
+                        <p>600円（＋税）</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="image/chocola.png" alt="焼きマシュマロショコラドリンク"/>
+                    <div class="text">
+                        <h2>焼きマシュマロ<br>ショコラドリンク</h2>
+                        <p>800円（＋税）</p>
+                    </div>
+                </div>
+
+                 <div class="item">
+                    <img src="image/ikusu.png" alt="クス・イクス・ビター"/>
+                    <div class="text">
+                        <h2>クス・イクス・ビター</h2>
+                        <p>800円（＋税）</p>
+                    </div>
+                </div>
+
+                 <div class="item">
+                    <img src="image/lime.png" alt="フレッシュライムティー"/>
+                    <div class="text">
+                    <h2>フレッシュライムティー </h2>
+                     <p>600円（＋税）</p>
+                     </div>
+                </div>
+            
+                 <div class="item">
+                    <img src="image/dog.png" alt="ソルティ・ドッグ・コリンズ"/>
+                    <div class="text">
+                    <h2>ソルティ・ドッグ・コリンズ</h2>
+                    <p>800円（＋税）</p>
+                    </div>
+                </div>
+
+                <div class="button3">
+                 <img src="image/button-drinkmenu.png" alt="ドリンクメニュー">
+                </div>
+             </div>
+    	</section>
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <h1 class="logo"><img src="image/cat.svg">Le Café des Chats<span>ル・カフェ・デ・シャ</span></h1>
+                <nav>
                     <ul>
-                    <h2>Phone & Mail</h2>
-                    <p>042-000-0000<br>
-                    shop@le_cafe_des_chats.jp</p>
+                        <li><a href="kadai.html#about">About</a></li>
+                        <li><a href="kadai.html#new arrivals">New Arrivals</a></li>
+                        <li><a href="kadai.html#drink">Drink</a></li>
+                        <li><a href="kadai.html#contact">Contact</a></li>
+
+                        <li class="sns-footer">
+                            <ul>
+                                <li><a href="kadai.html"><img src="image/icon_tw.svg" alt="twitter"></a></li>
+                                <li><a href="kadai.html"><img src="image/icon_in.svg" alt="instagram"></a></li>
+                                <li><a href="kadai.html"><img src="image/icon_fb.svg" alt="facebook"></a></li>
+                            </ul>    
+                        </li>
                     </ul>
-                </li>
-            </ul>
-     </nav>
-        <div id="copyright">&copy;2024 Le Café des Chats. All rights reserved.</div>
+                </nav>
+            </div>
+
+            <div class="shop-info">
+                <h2>Shop Info</h2>
+                 <p>182-0011<br>
+                    東京都調布市深大寺北町1-2-1<br>
+                    月火水定休 10:00 - 17:00
+                 </p>
+            </div>
+
+            <div class="phone-mail">
+                <h2>Phone & Mail</h2>
+                <p>042-000-0000<br>
+                shop@le_cafe_des_chats.jp</p>
+            </div>
+
+            <p class="copyright">&copy;2024 Le Café des Chats. All rights reserved.</p>
         </div>
-	</footer>
-	
-</main>
+     
+            
+    </footer>
 </body>
 </html>
