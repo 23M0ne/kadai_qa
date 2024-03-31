@@ -153,7 +153,7 @@ img {
      /* 新着メニュー */
     
      #new-arrivals {
-        background: #FFF8C1;
+        background: hsl(53, 100%, 88%);
         width: 100vw;
         height: 765px;
         padding: 50px 0;
@@ -293,6 +293,10 @@ img {
         line-height: 1.7;
     }
 
+    #about .text-sp {
+        display: none;
+    }
+
     #about .text p {
         margin: 0 0 40px;
     }
@@ -410,6 +414,32 @@ img {
         margin-top: 10px;
     }
 
+    #drink .text-pc h2 {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        color: #707070;
+        text-align: center;
+        line-height: 30px;
+        white-space:nowrap;
+    }
+
+    #drink .text-pc p {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        color: #707070;
+        text-align: center;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    #drink .text-sp {
+        display: none;
+    }
+
     #drink .button3 {
         width: 100%;
         text-align: right;
@@ -457,6 +487,10 @@ img {
         color: #707070;
         display: block;
         margin: -5px 0 0;
+    }
+
+    #sp-logo img {
+        display: none;
     }
 
     /* ナビゲーション */
@@ -547,12 +581,9 @@ img {
     /* ヘッダー*/
     header > div {
         width: 90%;
-        max-width: 333px;
-        height: 217px;
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 20px;
-        margin-bottom: 20px;
     }
 
     header .logo {
@@ -583,26 +614,21 @@ img {
     #nav-sp {
         background-color: #6c6c6a;
         position: absolute;
-        left: 226px;
         right: 20px;
         top: 88px;
-        height: 230px;
         width: 128px;
+        z-index: +3;
     }
 
     #nav-sp .menu {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         color: #ffffff;
         text-decoration: none;
         list-style-type: none;
-        width: 102px;
         margin-top: 20px;
         margin-bottom: 25px;
-        margin-left: 13px;
-        margin-right: 13px;
         font-size: 20px;
         letter-spacing: 0.1em;
         white-space:nowrap;
@@ -610,20 +636,21 @@ img {
         
     }
 
-    #nav-sp > a:hover {
-        color: #ffffff;
-        text-decoration: underline;
-    }
-
     #sns-sp {
         display: flex;
-        left: 13px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 25px;
     }
-    
+
+    #sns-sp a {
+        display: block;
+        margin: 0 10px;
+    }
+
     #sns-sp img {
-        position: absolute;
-        margin-right: 31px;
-        width: 19px;
+        width: auto;
+        height: 17px;
     }
 
     /* キービジュ */
@@ -639,7 +666,7 @@ img {
         height: 430px;
         transform: scaleX(-1);
         object-fit: cover;
-        position:fixed;
+        position: absolute;
         z-index: -1;
     }
 
@@ -677,5 +704,406 @@ img {
         color: #fff;
     }
 
+    /* 新着メニュー */
+
+    #new-arrivals {
+        background: #FFF8C1;
+        margin-top: +100px;
+        width: 100vw;
+        padding: 55px 0;
+        z-index: 2;
+        position: relative;
+    }
+
+    #new-arrivals h1 {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    #new-arrivals h1 .fr {
+        font-family: "Reenie Beanie";
+        font-weight: normal;
+        font-size: 50px;
+        letter-spacing: 0.1em;
+        line-height: 65px;
+        color: #666;
+        border-bottom: 1px solid #707070;
+    }
+
+    #new-arrivals h1 .jp {
+        display: block;
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        color: #707070;
+    }
+
+    #new-arrivals > div {
+        display: flex; 
+        flex-wrap: wrap; 
+        width: 90%;
+        max-width: 335px;
+        margin: 0 auto;
+    }
+
+    #new-arrivals .item {
+        display: flex;
+        justify-content: space-between;
+        max-width: 335px; 
+        margin-top: 60px;
+    }
+
+    #new-arrivals .item img {
+        margin-top: 19px;
+        width: 103px;
+        height: 103px
+    }
+
+    #new-arrivals .text h2 {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 19px;
+        margin-bottom: 10px;
+        letter-spacing: 0.1em;
+        color: #666;
+    }
+
+    #new-arrivals .text {
+        width: calc(100% - 120px); 
+    }
+
+    #new-arrivals .text p {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        line-height: 18px;
+        color: #666;
+    }
+
+    #new-arrivals .text .price {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 17px;
+        letter-spacing: 0.1em;
+        text-align: right;
+        color: #666;
+    }
+
+    #new-arrivals .button1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #new-arrivals .button1 img {
+        width: 233px;
+        margin-top: 59px;
+        margin-bottom: 55px;
+    }
+
+     /* about */ 
+
+     #about h1 {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    #about .fr {
+        font-family: "Reenie Beanie";
+        font-weight: normal;
+        font-size: 50px;
+        letter-spacing: 0.1em;
+        line-height: 1.3;
+        color: #666;
+        border-bottom: 1px solid #707070;
+    }
+
+    #about h1 .jp {
+        display: block;
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        color: #707070;
+    }
+
+    #about .img-cat {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    #about .text-sp {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 20px;
+        color: #707070;
+        line-height: 1.7;
+    }
+
+    #about .text {
+        display: none;
+    }
+
+    #about .text-sp p {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #about .button2 {
+        text-align: center;
+    }
+
+    #about .button2 img {
+        width: 335px;
+        margin-top: 10px;
+        margin-bottom: 60px;
+    }
+
+/*  ドリンクメニュー */
+
+    #drink {
+        width: 100vw;
+        background: #e4f0d1;
+        padding: 50px 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    #drink h1 {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 52px;
+    }
+
+    #drink .fr {
+        font-family: "Reenie Beanie";
+        font-weight: normal;
+        font-size: 50px;
+        letter-spacing: 0.1em;
+        line-height: 1.3;
+        color: #666;
+        border-bottom: 1px solid #707070;
+    }
+
+    #drink h1 .jp {
+        display: block;
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        color: #707070;
+        margin-bottom: 94px;
+    }
+
+    #drink > div {
+        display: flex; 
+        flex-wrap: wrap; 
+        width: 90%;
+        max-width: 335px;
+        margin: 0 auto;
+    }
+
+    #drink .item {
+        max-width: 278px; 
+        margin: 60 auto;
+        text-align: center;
+    }
+
+    #drink .item img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #drink .text h2 {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        color: #707070;
+        text-align: center;
+        line-height: 30px;
+        white-space:nowrap;
+    }
+
+    #drink .text p {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        color: #707070;
+        text-align: center;
+        line-height: 30px;
+        margin-top: -18px;
+    }
+
+    #drink .text-pc h2 {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        color: #707070;
+        text-align: center;
+        line-height: 30px;
+        white-space:nowrap;
+    }
+
+    #drink .text-pc p {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        color: #707070;
+        text-align: center;
+        line-height: 30px;
+        margin-top: -18px;
+    }
+
+    #drink .text-sp h2 {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 17px;
+        letter-spacing: 0.1em;
+        color: #707070;
+        text-align: center;
+        line-height: 30px;
+        white-space:nowrap;
+    }
+
+    #drink .text-sp p {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        color: #707070;
+        text-align: center;
+        line-height: 30px;
+        margin-top: -18px;
+    }
+
+    #drink .text-pc {
+        display: none;
+    }
+
+    #drink .button3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #drink .button3 img {
+        object-fit: cover;
+        width: 270px;
+        height: 40px;
+        margin-top: 60px;
+        margin-bottom: 55px;
+    }
+
+/*  フッター 非表示*/
+
+    footer .sns-footer {
+        display: none;
+    }
+
+    footer  nav ul {
+        display: none;
+    }
+    
+    footer .shop-info,
+    footer .phone-mail {
+         display: none;
+    }
+
+    footer .logo {
+         display: none;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    footer .logo span {
+        display: none;
+    }
+
+ /*  フッター */
+
+ footer #nav-sp2 {
+    margin-top: 60px;
+    margin-right: 67px;
+    margin-left: 67px;
+    width: 242px;
 }
+
+ footer .sns-sp2 {
+    display: flex;
+    text-align: center;
+    top: 60px;
+    left: 122px;
+    right: 122px;
+}
+
+.sns-sp2 img {
+    width: 21px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+footer .menu-sp2 {
+    text-align: center;
+}
+
+footer .menu-sp2 a {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Reenie Beanie";
+    font-size: 26px;
+    letter-spacing: 0.1em;
+    line-height: 23px;
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #707070;
+    width: 102px;
+    margin-top: 20px;
+  }
+
+footer .shop-info-sp,
+footer .phone-mail-sp {
+    text-align: center;
+}
+
+footer .shop-info-sp h2,
+footer .phone-mail-sp h2 {
+    font-family: "Reenie Beanie";
+    font-size: 26px;
+    letter-spacing: 0.1em;
+    line-height: 23px;
+    color: #666;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+footer .shop-info-sp p,
+footer .phone-mail-sp p {
+    font-family: "Hiragino Sans";
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 25px;
+    color: #666;
+    margin-top: 11px;
+    margin-bottom: 20px;
+}
+
+
+}
+
 
